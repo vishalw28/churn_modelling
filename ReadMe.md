@@ -81,3 +81,19 @@ with open('scaler.pkl','wb') as file:
 #10 Now your all the data is ready for AI.
 
 Next ANN implementation
+
+
+
+### Common Mistakes
+
+In prediction.ipynb
+1. Any update/concat operation statement gets run twice then its value will change -> As a result further results will be wrong
+```
+input_df=pd.concat([input_df.drop('Geography', axis=1), geo_encoded_df],axis=1)
+```
+
+2.  While scaling the data because column in scaler.pkl & input data were not matching due to above #1.
+```
+input_scaled = scaler.transform(input_df)
+input_scaled
+```
