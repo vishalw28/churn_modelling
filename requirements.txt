@@ -1,4 +1,4 @@
-tensorflow 2.15 #2.15 for speficic version
+tensorflow=2.15 #2.15 for speficic version
 pandas
 numpy
 scikit-learn
