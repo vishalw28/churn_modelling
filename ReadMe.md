@@ -83,6 +83,18 @@ with open('scaler.pkl','wb') as file:
 Next ANN implementation
 
 
+#11 Perform the prediction using encoders, scaler, model
+Check prediction.ipynb file
+
+
+#12 Create a web application using streamlet.
+
+
+### How to run web app
+1. Enable the virtual environment using `conda activate venv/`
+2. Run the web appusing `streamlit run app.py` 
+
+
 
 ### Common Mistakes
 
