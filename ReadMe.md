@@ -109,3 +109,13 @@ input_df=pd.concat([input_df.drop('Geography', axis=1), geo_encoded_df],axis=1)
 input_scaled = scaler.transform(input_df)
 input_scaled
 ```
+
+
+
+### Determine the optimal number of neuron
+1. Start Simple: Begin with simple architecture & gradually increase complexity if needed.
+2. Grid Search/Random Search: Use grid/random search  to try different architectures.
+3. Cross Validation: Use cross validation to evaluate the performance of different architecture.
+4. Heuristics & Rule of Thumb: Some heuristics & empirical rules can provide starting points.
+    - The number of neurons in the hidden layer should be b/w the size of input layer & the size of output layer.
+    - Common practice is to start with 1-2 hidden layers.
